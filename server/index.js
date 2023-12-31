@@ -10,6 +10,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js";
 import { register } from "./controller/auth.js";
+import { verifyToken } from "./middleware/auth.js";
 
 // the way to upload your file to server
 
