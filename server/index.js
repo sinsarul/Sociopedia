@@ -14,6 +14,9 @@ import postRoutes from "./routes/posts.js"
 import { register } from "./controller/auth.js";
 import { createPost } from "./controller/posts.js"
 import { verifyToken } from "./middleware/auth.js";
+import User from "./models/Post.js"
+import Post from "./models/Post.js";
+import{ users, posts } from "./data/index.js"
 
 // the way to upload your file to server
 
@@ -56,5 +59,9 @@ mongoose
   .connect(process.env.MONGODB_URL, {})
   .then(() => {
     app.listen(PORT, () => console.log(`Server port: ${PORT}`));
+
+    //  ADD DATA ONE TIME
+    // User.insertMany(users);
+    // Post.insertMany(posts);
   })
   .catch((error) => console.log(`${error} did not connect`));
