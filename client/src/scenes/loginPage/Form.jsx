@@ -56,7 +56,8 @@ const Form = () => {
   const isRegister = pageType === "register";
 
   const handleFormSubmit = async (values, onsubmitProps) => {
-    
+    if (isLogin) await login(values, onSubmitProps);
+    if (isRegister) await register(values, onSubmitProps); 
   };
 
   return (
