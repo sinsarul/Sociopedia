@@ -1,6 +1,6 @@
-// const Widgets  = () => {
-//   return <div>loginPage</div>;
-// };
+const Widgets  = () => {
+  return <div>loginPage</div>;
+};
 
-// export default Widgets ;
+export default Widgets ;
  
