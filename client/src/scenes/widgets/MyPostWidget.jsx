@@ -40,6 +40,5 @@ const MyPostWidget = ({ picturePath }) => {
 
 
 
-
     
 }
